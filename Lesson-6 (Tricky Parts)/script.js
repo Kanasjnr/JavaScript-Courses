@@ -106,6 +106,8 @@ function hosting() {
   console.log("this function has been hoisted");
 }
 
+
+// clousure
 const outer = () => {
   const outerVar = "hello";
   const inner = () => {
