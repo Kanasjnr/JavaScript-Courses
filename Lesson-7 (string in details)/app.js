@@ -128,11 +128,11 @@ console.log(str.trim());
 
 // class work
 const footballClubs = "Bayern,Arsenal,Watford,everton"
-const clubs = footballClubs.split(' ').reverse(' ').join();
+const clubs = footballClubs.split(',').reverse().join();
 console.log(clubs);
 
-const animalSounds = 'meow'
-console.log(animalSounds.repeat(5));
+const cow = 'muuu'
+console.log(cow.repeat(5));
 
 const dinner = 'i ate rice for dinner yesterday'
 console.log(dinner.slice(6,10));
