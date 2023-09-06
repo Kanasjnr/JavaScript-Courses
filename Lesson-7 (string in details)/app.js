@@ -54,11 +54,11 @@ console.log(name.length);
 const firstLetter = name[0];
 console.log(firstLetter);
 // STRING CASE
-const mixedStringCase = "Hello, How Are you?";
-const lowerCase = mixedStringCase.toLowerCase();
-const upperCase = mixedStringCase.toUpperCase();
-console.log(lowerCase);
-console.log(upperCase);
+// const mixedStringCase = "Hello, How Are you?";
+// const lowerCase = mixedStringCase.toLowerCase();
+// const upperCase = mixedStringCase.toUpperCase();
+// console.log(lowerCase);
+// console.log(upperCase);
 
 // SEARCHING FOR A SUBSTRING
 
@@ -103,36 +103,63 @@ console.log(exampleString.slice(3));
 const exampleString1 = "pineapple";
 console.log(exampleString1.slice(4));
 
-
 // split method
-const sentence = 'The quick brown fox jumped over the lazy dog';
-console.log(sentence.split(' '));
+const sentence = "The quick brown fox jumped over the lazy dog";
+console.log(sentence.split(" "));
 
 // reverse method
-const name2 = "Rocco and Muhammed"
-const reverse = name2.split(' ') .reverse() .join (' ');
+const name2 = "Rocco and Muhammed";
+const reverse = name2.split(" ").reverse().join(" ");
 console.log(reverse);
 
-const cohort3 = 'muaz, Quadri supreme kenny muhammed rocco kanas';
-const result = cohort3.split(' ').reverse().join();
+const cohort3 = "muaz, Quadri supreme kenny muhammed rocco kanas";
+const result = cohort3.split(" ").reverse().join();
 console.log(result);
 
 // repeat method
-const dogSays = 'woof';
+const dogSays = "woof";
 console.log(dogSays.repeat(10));
 
-
 // trim method
-const str = '      @example.gmail.com        '
+const str = "      @example.gmail.com        ";
 console.log(str.trim());
 
 // class work
-const footballClubs = "Bayern,Arsenal,Watford,everton"
-const clubs = footballClubs.split(',').reverse().join();
+const footballClubs = "Bayern,Arsenal,Watford,everton";
+const clubs = footballClubs.split(",").reverse().join();
 console.log(clubs);
 
-const cow = 'muuu'
+const cow = "muuu";
 console.log(cow.repeat(5));
 
-const dinner = 'i ate rice for dinner yesterday'
-console.log(dinner.slice(6,10));
+const dinner = "i ate rice for dinner yesterday";
+console.log(dinner.slice(6, 10));
+
+// class work
+const myName = "Nasihudeen Jimoh Adegboyega";
+console.log(myName);
+console.log(myName.length);
+
+const mixedString = "Hey,all";
+const lowerCase = mixedString.toLowerCase();
+const upperCase = mixedString.toUpperCase();
+console.log(lowerCase);
+console.log(upperCase);
+
+const myHobbies$  = " sleeping, coding, listening to music"
+console.log(myHobbies$.indexOf('coding'));
+console.log(myHobbies$.lastIndexOf('lisinteng to music'));
+console.log(myHobbies$.includes('dancing'));
+console.log(myHobbies$.includes('coding'));
+console.log(myHobbies$.startsWith('sleeping'));
+console.log(myHobbies$.endsWith('listening to music'));
+console.log(myHobbies$.repeat(2 ));
+
+const  myGuy = "    my ghee   "
+console.log(myGuy.trim());
+
+const sound = "me and you"
+console.log(sound.split(" ").reverse().join(" "));
+
+const adage = "The quick brown fox jumped over the lazy dog";
+console.log(adage.slice(10,19));

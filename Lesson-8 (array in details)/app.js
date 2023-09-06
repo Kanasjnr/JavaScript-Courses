@@ -227,6 +227,7 @@ const itemNames = inventory.map((value) => value.name);
 console.log(itemNames);
 
 // Filter
+// shows the output in an array
 const number = [-20, -45, 43, 30, -1, 23, 34, -50, 44, -75];
 console.log(number);
 console.log(number.filter((number) => number < 0));
@@ -317,7 +318,7 @@ console.log(array.every((el) => el > 0));
 
 // reduce ()
 // this iterates all the element in an arry and computes them in a single value
-// accu,ulator
+// accumulator
 
 let initialValue = 0;
 const priceList = [200, 400, 100, 350, 1040, 450];
