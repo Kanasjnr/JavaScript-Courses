@@ -121,40 +121,117 @@ const session = {
   time: "5-september-2023",
   device: "mobile",
   browser: "chrome",
-}
-const sessionLog = Object.values(session)
+};
+const sessionLog = Object.values(session);
 console.log(sessionLog);
 
 // entries method
-    // it creates a nested array of the key and value pairs of an object
-    const sessionInfo = Object.entries(session)
-    console.log(sessionInfo);
+// it creates a nested array of the key and value pairs of an object
+const sessionInfo = Object.entries(session);
+console.log(sessionInfo);
 const operatingSystem = {
-    name: 'linux',
-    version: 18.04,
-    license: 'open source'
-}
-const operatingSystemInfo = Object.entries(operatingSystem)
+  name: "linux",
+  version: 18.04,
+  license: "open source",
+};
+const operatingSystemInfo = Object.entries(operatingSystem);
 console.log(operatingSystemInfo);
 
 // freeze method
-    // it prevents modification of existing properties and prevent its properties from being added or removed
+// it prevents modification of existing properties and prevent its properties from being added or removed
 const user = {
-    userName: 'john',
-    password: 123123
-}
-const userInfo =Object.freeze(user);
-userInfo.userName = 'supreme'
+  userName: "john",
+  password: 123123,
+};
+const userInfo = Object.freeze(user);
+userInfo.userName = "supreme";
 console.log(userInfo);
 
-
 // seal method
-    // it prevents new properties from being added to an object
+// it prevents new properties from being added to an object
 
-    const user1 = {
-        userName: 'john',
-        password: 123123
-    }
-    const userInfo1 =Object.seal(user1);
-    userInfo1.userName = 'bola'
-    console.log(userInfo1);
+const user1 = {
+  userName: "john",
+  password: 123123,
+};
+const userInfo1 = Object.seal(user1);
+userInfo1.userName = "bola";
+console.log(userInfo1);
+
+// object is a common data structure that holds kids and value pairs
+const person1 = {
+  name: "soliu",
+  age: 10,
+};
+console.log(person1);
+
+let x;
+const person$ = {
+  name: "ali",
+  age: 20,
+  isAdmin: true,
+  address: {
+    street: "12 unity and peace",
+    city: "Ilorin",
+    state: "kwara",
+  },
+  hobbies: ["music", "sport"],
+};
+x = person$.name;
+console.log(x);
+
+x = person$.hobbies[0];
+console.log(x);
+
+// how to update a property in an object
+
+person$.name = "soliu";
+console.log(person$);
+
+person$["isAdmin"] = false;
+console.log(person$);
+
+// how to delete a property
+
+// delete person$.age;
+// console.log(person$);
+
+delete person$.address.street;
+console.log(person$);
+
+// how to add a property
+person$.hasChildren = true;
+console.log(person$);
+
+// how to write a function in an object
+person$.greet = function () {
+  console.log(`Hello, my name is ${this.name}`);
+};
+person$.greet();
+
+person$.ageM = function () {
+  console.log(`basirat is ${this.age} years old`);
+};
+person$.ageM();
+
+const todo = {};
+todo.id = 1;
+b = todo;
+console.log(b);
+
+// constructor in an object
+const todo1 = new Object();
+todo1.id = 1;
+todo1.name = "buy milk";
+todo1.completed = false;
+b = todo1;
+console.log(b);
+
+const firstName1 = "Soliu";
+const lastName1 = "Ahmad";
+
+const naming = {
+  firstName1,
+   lastName1,
+};
+console.log(naming);
