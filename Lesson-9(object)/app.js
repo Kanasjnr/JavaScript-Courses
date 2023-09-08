@@ -235,3 +235,5 @@ const naming = {
    lastName1,
 };
 console.log(naming);
+
+
