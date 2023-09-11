@@ -51,7 +51,8 @@ const spreadOperator = {
   firstName: "team",
   university: "Unilag",
 };
-// cloning using spread operator(...) method
+// 
+//cloning using spread operator(...) method
 const otherSp = { ...spreadOperator };
 console.log(otherSp);
 
@@ -176,3 +177,14 @@ console.log(send);
 
 const recieve = JSON.parse(send)
 console.log(recieve);
+
+
+
+
+
+
+
+
+
+
+
