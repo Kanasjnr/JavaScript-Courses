@@ -110,37 +110,91 @@ console.log(ageMap);
 const sort = companies.sort((c1, c2) => c1.start > c2.start);
 console.log(sort);
 
-const age1 = ages.sort((a,b) => a-b)
+const age1 = ages.sort((a, b) => a - b);
 console.log(age1);
 
 //************ reduce method
 // for loop method
-let ageSum = 0
+let ageSum = 0;
 for (let i = 0; i < ages.length; i++) {
-   ageSum += ages[i]
+  ageSum += ages[i];
 }
 console.log(ageSum);
 
-
 // reduce method
-const ageSum1 = ages.reduce(function(total,age){
-    return total+age
-}, 0)
+const ageSum1 = ages.reduce(function (total, age) {
+  return total + age;
+}, 0);
 console.log(ageSum1);
 
 //Using Arrow Function
 
-const ageSum2 = ages.reduce((total, age) => total+age, 0)
+const ageSum2 = ages.reduce((total, age) => total + age, 0);
 console.log(ageSum2);
 
-const totalYears = companies.reduce((total,Company) => total+ (Company.end - Company.start),0)
+const totalYears = companies.reduce(
+  (total, Company) => total + (Company.end - Company.start),
+  0
+);
 console.log(totalYears);
 
 // combination of all methods
 
 const combined = ages
-.map(age => age*2)
-.filter(age => age >= 40)
-.sort((a,b) => a-b)
-.reduce((a,b) => a+b, 0)
+  .map((age) => age * 2)
+  .filter((age) => age >= 40)
+  .sort((a, b) => a - b)
+  .reduce((a, b) => a + b, 0);
 console.log(combined);
+
+// Spead And Rest Operators (...)
+
+const add = (a, b) => {
+  return a + b;
+};
+console.log(add(2, 2));
+
+// rest operator
+
+const addNo = (...args) => {
+  return args.reduce((acc, val) => acc + val);
+};
+console.log(addNo(2, 2, 2, 2));
+
+// spred operator
+const numbers = [1, 2, 3, 4, 5];
+const newNumber = [...numbers, 6];
+console.log(newNumber);
+
+// Object And Array destructuring
+
+const persons = {
+  firstName: "Gary",
+  lastName: "Vee",
+  car: {
+    color: "red",
+    wheel: 4,
+  },
+  animals: {
+    dog: {
+      name: "fluffy",
+      age: 20,
+    },
+    cat: {
+      name: "kitty",
+      age: 10,
+    },
+  },
+};
+
+// destructuring
+
+const {firstName, lastName, car:{color,wheel}, animals: {cat, dog}} = persons
+console.log(persons);
+
+// Aray
+const intro = ["Hello",'i','am','sarah']
+console.log(intro);
+
+const [greeting,,,name] = intro
+console.log(greeting, name);
