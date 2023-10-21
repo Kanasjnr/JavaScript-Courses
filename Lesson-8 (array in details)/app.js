@@ -319,6 +319,8 @@ console.log(array.every((el) => el > 0));
 // reduce ()
 // this iterates all the element in an arry and computes them in a single value
 // accumulator
+// it takes 2 argument
+// the call back function containes the accumulator and the current value
 
 let initialValue = 0;
 const priceList = [200, 400, 100, 350, 1040, 450];
