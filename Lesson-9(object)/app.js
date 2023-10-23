@@ -85,7 +85,7 @@ console.log(player[bola]);
 // it is a property containing a function declaration
 
 const myObj = {
-  myMethod1: () => {},    // Arrow function
+  myMethod1: () => {}, // Arrow function
   myMethod2: function () {}, //function expression
   myMethod3() {}, //function declaration
 };
@@ -100,7 +100,6 @@ const dog = {
 console.log(dog.name);
 dog.bark();
 
-                                        
 // object methods
 
 // Key method
@@ -115,7 +114,6 @@ const employees = {
 
 const employeesInfo = Object.keys(employees);
 console.log(employeesInfo);
-
 
 //value method
 // it creates/returns an array containing the values of an object
@@ -236,8 +234,6 @@ const lastName1 = "Ahmad";
 
 const naming = {
   firstName1,
-   lastName1,
+  lastName1,
 };
 console.log(naming);
-
-
